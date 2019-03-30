@@ -17,8 +17,8 @@ public class TestBeanScope extends UnitTestBase{
         BeanScope beanScope = super.getBean("beanScope");
         beanScope.say();
 
-        BeanScope beanScope2 = super.getBean("beanScope");
-        beanScope2.say();
+        beanScope = super.getBean("beanScope");
+        beanScope.say();
     }
 
     @Test
