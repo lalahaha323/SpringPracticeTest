@@ -3,8 +3,8 @@ package com.imooc.lifecycle;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class BeanLifeCycle{
-    /*
+public class BeanLifeCycle implements InitializingBean, DisposableBean{
+
     public void defaultInit() {
         System.out.println("Bean defaultInit");
     }
@@ -21,7 +21,7 @@ public class BeanLifeCycle{
 
     public void afterPropertiesSet() throws Exception {
         System.out.println("Bean afterPropertiesSet");
-    }*/
+    }
 
     public void start() {
         System.out.println("Bean start.");
