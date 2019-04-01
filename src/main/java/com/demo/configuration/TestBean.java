@@ -9,9 +9,9 @@ public class TestBean {
         System.out.println("TestBean sayHello...");
     }
 
-    public String toString() {
+    /*public String toString() {
         return "username:" + this.username + ",url:" + this.url + ",password:" + this.password;
-    }
+    }*/
 
     public void start() {
         System.out.println("TestBean 初始化...");
