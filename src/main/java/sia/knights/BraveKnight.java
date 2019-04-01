@@ -12,5 +12,3 @@ public class BraveKnight implements Knight{
         quest.embark();
     }
 }
-//定义了一个勇敢的骑士，实现了骑士的接口
-//定义了一个探险的任务
