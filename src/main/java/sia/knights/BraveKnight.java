@@ -1,6 +1,6 @@
 package sia.knights;
 
-public class BraveKnight implements Knight {
+public class BraveKnight implements Knight{
 
     private Quest quest;
 
@@ -12,3 +12,5 @@ public class BraveKnight implements Knight {
         quest.embark();
     }
 }
+//定义了一个勇敢的骑士，实现了骑士的接口
+//定义了一个探险的任务
