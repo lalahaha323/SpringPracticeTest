@@ -1,5 +1,9 @@
 package com.demo.configuration;
 
+import org.springframework.stereotype.Component;
+
+//添加注册bean的注解
+@Component
 public class TestBean {
     private String username;
     private String url;
