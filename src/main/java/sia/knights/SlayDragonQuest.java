@@ -2,7 +2,7 @@ package sia.knights;
 
 import java.io.PrintStream;
 
-public class SlayDragonQuest implements Quest {
+public class SlayDragonQuest implements Quest{
 
     private PrintStream stream;
 
