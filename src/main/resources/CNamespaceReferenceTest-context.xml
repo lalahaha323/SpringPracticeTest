@@ -3,10 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
         <bean id="compactDisc" class="chapter_02.xmlconfig.soundsystem.BlankDisc">
-            <constructor-arg value="Sgt.Sgt. Pepper's Lonely Hearts Club Band"/>
-            <constructor-arg value="The Beatles" />
-            <constructor-arg>
-                <set>
+            <property name="title" value="Sgt. Pepper's Lonely Hearts Club Band"/>
+            <property name="artist" value="The Beatles"/>
+            <property name="tracks">
+                <list>
                     <value>Sgt. Pepper's Lonely Hearts Club Band</value>
                     <value>With a Little Help from My Friends</value>
                     <value>Lucy in the Sky with Diamonds</value>
@@ -20,8 +20,10 @@
                     <value>Good Morning Good Morning</value>
                     <value>Sgt. Pepper's Lonely Hearts Club Band (Reprise)</value>
                     <value>A Day in the Life</value>
-                </set>
-            </constructor-arg>
+                </list>
+            </property>
         </bean>
-        <bean id="cdPlayer" class="chapter_02.xmlconfig.soundsystem.CDPlayer" c:cd-ref="compactDisc"></bean>
+        <bean id="cdPlayer" class="chapter_02.xmlconfig.soundsystem.CDPlayer">
+            <property name="compactDisc" ref="compactDisc" />
+        </bean>
 </beans>
